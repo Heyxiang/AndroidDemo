@@ -13,7 +13,7 @@ gradle
 /build
 /src/test/
 /src/androidTest
-
+ 
 .classpath
 .project
 *.apk
