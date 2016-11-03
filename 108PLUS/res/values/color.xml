@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="mycolor">#333</color>
+    <color name="line_color">#CBC9CB</color>
+    <color name="title_bottom_line">#666</color>
+    <color name="mycolor1">#00cab6</color>
+    <color name="white">#fff</color>
+    <color name="index_btn_bg_pressed">#ADE3F7</color>
+    <color name="titleView">#CBC9CB</color>
+    <color name="price_bottom">#F9F9F9</color>
+    <color name="buy_bottom">#FA4357</color>
+    <color name="buy_note">#959695</color>
+    <color name="btn_buy_note">#65DCCD</color>
+    
+</resources>

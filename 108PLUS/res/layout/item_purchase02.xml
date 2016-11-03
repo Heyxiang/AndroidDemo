@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@color/titleView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+            android:text="购买须知" />
+
+       <TextView
+            android:id="@+id/textView1"
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@color/titleView"
+            android:layout_gravity="center_vertical"
+            android:text="TextView" />
+       </LinearLayout>
+
+     
+    <TextView
+        android:id="@+id/buy_note"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="8dp"
+         android:lines="4"
+         android:ellipsize="end"
+         android:layout_marginTop="5dp"
+         android:lineSpacingExtra="5dp"
+           android:textColor="@color/buy_note"
+         android:text="集合地点：北京市海淀区西直门交大东路66号钻和公馆1号楼B口2楼239教室" />
+         
+    <Button 
+        android:id="@+id/buyMorebtn_note"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:textColor="#12C5B5"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/purcharse_btn_buynote"
+        android:layout_marginTop="10dp"
+        android:text="更多购买须知"/>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@color/titleView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="70dp"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+            android:text="更多套餐详情" />
+
+       <TextView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@color/titleView"
+            android:layout_gravity="center_vertical"
+            android:text="TextView" />
+       </LinearLayout>
+    <TextView
+        android:id="@+id/buyNOte_tacan"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="8dp"
+             android:layout_marginTop="5dp"
+               android:textColor="@color/buy_note"
+                android:lines="4"
+         android:ellipsize="end"
+             android:text="免费提供上课使用的吉他" />
+          
+    <Button 
+        android:id="@+id/ComboMore"
+       android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:textColor="#12C5B5"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/purcharse_btn_buynote"
+        android:layout_marginTop="15dp"
+        android:text="更多套餐详情"/>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@color/titleView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="8dp"
+             android:layout_marginRight="8dp"
+            android:text="产品详情" />
+
+       <TextView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@color/titleView"
+            android:layout_gravity="center_vertical"
+            android:text="TextView" />
+       </LinearLayout>
+       <WebView 
+           android:id="@+id/wv_produict_detail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+</LinearLayout>

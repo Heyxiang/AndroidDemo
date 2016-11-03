@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" >
+
+        <ImageView
+            android:id="@+id/index_listview_img1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/personal_header" />
+
+        <TextView
+            android:id="@+id/index_listview_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="17sp"
+            android:layout_below="@+id/index_listview_img1"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/index_listview_img2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/index_listview_tv1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/location_icon_gray" />
+
+        <TextView
+            android:id="@+id/index_listview_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/index_listview_img2"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/index_listview_img2"
+            android:layout_marginBottom="20dp"
+            android:text="距离" />
+
+        <ImageView
+            android:id="@+id/index_listview_img3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/index_listview_img2"
+            android:layout_marginLeft="33dp"
+            android:layout_toRightOf="@+id/index_listview_tv2"
+            android:src="@drawable/collect_icon" />
+
+        <TextView
+            android:id="@+id/index_listview_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/index_listview_img3"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/index_listview_img3"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/index_listview_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/index_listview_tv3"
+            android:layout_alignBottom="@+id/index_listview_tv3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="￥价格"
+            android:textColor="#f00" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <TextView
+            android:id="@+id/buyNote_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购买须知"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/titleView" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/buyNote_contentAttention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:text="注意事项
+1、首次参加的单身朋友，请携带身份证
+2、注意合理着装，良好的第一印象会大大增加交友成功的可能
+3、报名的朋友请安排好时间，准时参加"
+                android:textColor="@color/buy_note" />
+
+            <TextView
+                android:id="@+id/buyNote_contentSuit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:text="适合人群
+1、受过高等教育的单身人士
+2、工作繁忙精力有限，讲究高效利用时间的人
+3、希望认识更多单身异性朋友，扩大自己社交圈的人
+4、心理健康的人，如果对陌生人过度戒备者不适于参加
+5、不想被父母朋友逼着去相亲，又怕网恋“见光死”的"
+                android:textColor="@color/buy_note" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/close_detail_button" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">108PLUS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_event_experence__detail">Event_experence_DetailActivity</string>
+    <string name="title_activity_more_buy_note">MoreBuyNoteActivity</string>
+    <string name="title_activity_more_taocan">MoreTaocanActivity</string>
+
+</resources>

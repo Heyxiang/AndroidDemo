@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/headImg_lifepaty"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+         android:scaleType="fitXY"
+        android:background="@drawable/merchant_info_default_background" />
+<TextView 
+    android:id="@+id/name_lifeparty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:text="东区故事生活馆开幕"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp" >
+
+    <TextView
+        android:id="@+id/time_lifeparty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_collect_lifeparty"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="5dp"
+        android:text="11-15日" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="25.61km" />
+
+    <TextView
+        android:id="@+id/price_lifeparty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="￥593"
+        android:layout_marginRight="5dp"
+        android:textColor="#f00"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fav_lifeparty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_collect_lifeparty"
+        android:layout_marginRight="44dp"
+        android:layout_toLeftOf="@+id/price_lifeparty"
+        android:layout_marginLeft="2dp"
+        android:text="55人" />
+
+    <ImageView
+        android:id="@+id/list_collect_lifeparty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+       
+        android:layout_toLeftOf="@+id/fav_lifeparty"
+        android:background="@drawable/list_collection_icon" />
+
+</RelativeLayout>
+
+</LinearLayout>

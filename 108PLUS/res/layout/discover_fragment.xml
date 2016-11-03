@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发现"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+    
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"  
+        android:id="@+id/discover_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrDrawable="@drawable/icon"
+        ptr:ptrAnimationStyle="rotate"  
+        ptr:ptrMode="both"
+         >
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="人群推荐"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+	
+    人群推荐图片部分
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        >
+        情侣
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/found_lovers_icon"
+            android:layout_margin="10dp"
+            />
+        <View 
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/line_color"/>
+        亲子和团队
+		<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_weight="4"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="center_vertical"
+	    >
+
+			<ImageView
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:layout_margin="10dp"
+			    android:layout_weight="1"
+			    android:scaleType="fitXY"
+			    android:src="@drawable/found_families_icon" />
+
+	    <View 
+	        android:layout_width="wrap_content"
+	        android:layout_height="1dp"
+	        android:background="@color/line_color"
+	        />
+	    <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/found_team_icon"
+	        android:layout_margin="10dp"
+	        />
+		</LinearLayout>
+    </LinearLayout>
+    
+	<View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+
+	往期回顾
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="往期回顾"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+    
+    <!-- GridView -->
+    
+    <com.seventeen.plus.custom.MyGridView
+        android:id="@+id/discover_gv_look_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        />
+    </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+	
+</LinearLayout>
