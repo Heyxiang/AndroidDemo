@@ -27,4 +27,4 @@ local.properties
 .settings/
 proguard/
 *.log
-*.jks
+*.jks 
